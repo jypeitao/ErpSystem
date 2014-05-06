@@ -1,24 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow" >
-  <property name="geometry" >
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>857</width>
+    <height>569</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <stylestrategy>NoAntialias</stylestrategy>
+   </font>
+  </property>
+  <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="LogoBg">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>859</width>
+      <height>49</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>1</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>100</red>
+          <green>119</green>
+          <blue>242</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>100</red>
+          <green>119</green>
+          <blue>242</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>100</red>
+          <green>119</green>
+          <blue>242</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>100</red>
+          <green>119</green>
+          <blue>242</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>857</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>维修业务</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+    <addaction name="action_3"/>
+    <addaction name="separator"/>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
+    <addaction name="separator"/>
+    <addaction name="action_8"/>
+    <addaction name="action_9"/>
+    <addaction name="action_10"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>维修报表</string>
+    </property>
+    <addaction name="action_11"/>
+    <addaction name="action_12"/>
+    <addaction name="action_13"/>
+    <addaction name="action_14"/>
+    <addaction name="action_15"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>配件业务</string>
+    </property>
+    <addaction name="action_16"/>
+    <addaction name="action_17"/>
+    <addaction name="separator"/>
+    <addaction name="action_18"/>
+    <addaction name="action_20"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>配件报表</string>
+    </property>
+    <addaction name="action_21"/>
+    <addaction name="action_22"/>
+    <addaction name="action_23"/>
+    <addaction name="separator"/>
+    <addaction name="action_25"/>
+    <addaction name="action_26"/>
+    <addaction name="action_27"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>库存管理</string>
+    </property>
+    <addaction name="action_28"/>
+    <addaction name="action_29"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>财务管理</string>
+    </property>
+    <addaction name="action_30"/>
+    <addaction name="action_31"/>
+    <addaction name="action_32"/>
+    <addaction name="action_33"/>
+    <addaction name="action_34"/>
+    <addaction name="action_35"/>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>客户关系</string>
+    </property>
+    <addaction name="action_36"/>
+    <addaction name="action_37"/>
+    <addaction name="action_38"/>
+    <addaction name="action_39"/>
+   </widget>
+   <widget class="QMenu" name="menu_8">
+    <property name="title">
+     <string>系统管理</string>
+    </property>
+    <addaction name="action_40"/>
+    <addaction name="action_41"/>
+    <addaction name="action_42"/>
+    <addaction name="action_43"/>
+    <addaction name="separator"/>
+    <addaction name="action_45"/>
+    <addaction name="separator"/>
+    <addaction name="action_47"/>
+    <addaction name="action_48"/>
+    <addaction name="action_49"/>
+    <addaction name="separator"/>
+    <addaction name="action_51"/>
+    <addaction name="action_52"/>
+    <addaction name="action_53"/>
+    <addaction name="action_54"/>
+    <addaction name="action_55"/>
+   </widget>
+   <widget class="QMenu" name="menu_9">
+    <property name="title">
+     <string>窗口</string>
+    </property>
+    <addaction name="action_56"/>
+    <addaction name="action_57"/>
+    <addaction name="action_58"/>
+    <addaction name="action_59"/>
+    <addaction name="separator"/>
+    <addaction name="action_61"/>
+   </widget>
+   <widget class="QMenu" name="menu_10">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_62"/>
+    <addaction name="action_63"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_6"/>
+   <addaction name="menu_7"/>
+   <addaction name="menu_8"/>
+   <addaction name="menu_9"/>
+   <addaction name="menu_10"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action">
+   <property name="text">
+    <string>委托修理单</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>派工单</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>领料单</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>车间调度</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>结算单</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>保险跟踪</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>维修服务跟踪</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>保险到期提醒</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>维修收入利润表</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="text">
+    <string>维修档案管理</string>
+   </property>
+  </action>
+  <action name="action_13">
+   <property name="text">
+    <string>维修领料性质统计</string>
+   </property>
+  </action>
+  <action name="action_14">
+   <property name="text">
+    <string>维修项目性质统计</string>
+   </property>
+  </action>
+  <action name="action_15">
+   <property name="text">
+    <string>维修工业务员业务统计</string>
+   </property>
+  </action>
+  <action name="action_16">
+   <property name="text">
+    <string>采购入库</string>
+   </property>
+  </action>
+  <action name="action_17">
+   <property name="text">
+    <string>工具入库</string>
+   </property>
+  </action>
+  <action name="action_18">
+   <property name="text">
+    <string>销售单</string>
+   </property>
+  </action>
+  <action name="action_20">
+   <property name="text">
+    <string>工具领用管理</string>
+   </property>
+  </action>
+  <action name="action_21">
+   <property name="text">
+    <string>入库汇总表</string>
+   </property>
+  </action>
+  <action name="action_22">
+   <property name="text">
+    <string>入库明细表</string>
+   </property>
+  </action>
+  <action name="action_23">
+   <property name="text">
+    <string>工具入库统计</string>
+   </property>
+  </action>
+  <action name="action_25">
+   <property name="text">
+    <string>销售汇总表</string>
+   </property>
+  </action>
+  <action name="action_26">
+   <property name="text">
+    <string>销售明细表</string>
+   </property>
+  </action>
+  <action name="action_27">
+   <property name="text">
+    <string>工具领用统计表</string>
+   </property>
+  </action>
+  <action name="action_28">
+   <property name="text">
+    <string>库存查询</string>
+   </property>
+  </action>
+  <action name="action_29">
+   <property name="text">
+    <string>库存修改</string>
+   </property>
+  </action>
+  <action name="action_30">
+   <property name="text">
+    <string>维修收款单</string>
+   </property>
+  </action>
+  <action name="action_31">
+   <property name="text">
+    <string>入库付款单</string>
+   </property>
+  </action>
+  <action name="action_32">
+   <property name="text">
+    <string>销售收款</string>
+   </property>
+  </action>
+  <action name="action_33">
+   <property name="text">
+    <string>营业外收支</string>
+   </property>
+  </action>
+  <action name="action_34">
+   <property name="text">
+    <string>财务收支汇总</string>
+   </property>
+  </action>
+  <action name="action_35">
+   <property name="text">
+    <string>经营状况查询</string>
+   </property>
+  </action>
+  <action name="action_36">
+   <property name="text">
+    <string>客户档案</string>
+   </property>
+  </action>
+  <action name="action_37">
+   <property name="text">
+    <string>客户回访及联系统计</string>
+   </property>
+  </action>
+  <action name="action_38">
+   <property name="text">
+    <string>客户信息统计</string>
+   </property>
+  </action>
+  <action name="action_39">
+   <property name="text">
+    <string>电话管家</string>
+   </property>
+  </action>
+  <action name="action_40">
+   <property name="text">
+    <string>初始化</string>
+   </property>
+  </action>
+  <action name="action_41">
+   <property name="text">
+    <string>维修跟踪提醒</string>
+   </property>
+  </action>
+  <action name="action_42">
+   <property name="text">
+    <string>系统清零</string>
+   </property>
+  </action>
+  <action name="action_43">
+   <property name="text">
+    <string>系统备份</string>
+   </property>
+  </action>
+  <action name="action_45">
+   <property name="text">
+    <string>商品类别定义</string>
+   </property>
+  </action>
+  <action name="action_47">
+   <property name="text">
+    <string>用户及权限管理</string>
+   </property>
+  </action>
+  <action name="action_48">
+   <property name="text">
+    <string>报表管理中心</string>
+   </property>
+  </action>
+  <action name="action_49">
+   <property name="text">
+    <string>数据上传</string>
+   </property>
+  </action>
+  <action name="action_51">
+   <property name="text">
+    <string>工作提醒看板</string>
+   </property>
+  </action>
+  <action name="action_52">
+   <property name="text">
+    <string>修改密码</string>
+   </property>
+  </action>
+  <action name="action_53">
+   <property name="text">
+    <string>系统锁定</string>
+   </property>
+  </action>
+  <action name="action_54">
+   <property name="text">
+    <string>重新登录</string>
+   </property>
+  </action>
+  <action name="action_55">
+   <property name="text">
+    <string>退出系统</string>
+   </property>
+  </action>
+  <action name="action_56">
+   <property name="text">
+    <string>垂直排放</string>
+   </property>
+  </action>
+  <action name="action_57">
+   <property name="text">
+    <string>水平排放</string>
+   </property>
+  </action>
+  <action name="action_58">
+   <property name="text">
+    <string>平铺</string>
+   </property>
+  </action>
+  <action name="action_59">
+   <property name="text">
+    <string>层叠</string>
+   </property>
+  </action>
+  <action name="action_61">
+   <property name="text">
+    <string>排列图标</string>
+   </property>
+  </action>
+  <action name="action_62">
+   <property name="text">
+    <string>帮助主题</string>
+   </property>
+  </action>
+  <action name="action_63">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>
