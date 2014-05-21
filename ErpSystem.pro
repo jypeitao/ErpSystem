@@ -4,8 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
-
+QT       += core gui sql
 TARGET = ErpSystem
 TEMPLATE = app
 

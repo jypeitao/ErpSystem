@@ -12,3 +12,14 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_pushButton_clicked()
+{
+   ui->stackedWidget->setCurrentIndex(0);
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+
+   ui->stackedWidget->setCurrentIndex(2);
+}
