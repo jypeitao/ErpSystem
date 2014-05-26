@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/test">
+        <file>images/bg.png</file>
+        <file>images/indesign.png</file>
+        <file>images/msn.png</file>
+        <file>images/winrar.png</file>
+    </qresource>
+</RCC>

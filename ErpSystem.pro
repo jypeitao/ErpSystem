@@ -11,10 +11,22 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    logindialog.cpp
+    logindialog.cpp \
+    materialdialog.cpp \
+    newcustomerdialog.cpp \
+    orderdialog.cpp
 
 HEADERS  += mainwindow.h \
-    logindialog.h
+    logindialog.h \
+    materialdialog.h \
+    newcustomerdialog.h \
+    orderdialog.h
 
 FORMS    += mainwindow.ui \
-    logindialog.ui
+    logindialog.ui \
+    materialdialog.ui \
+    newcustomerdialog.ui \
+    orderdialog.ui
+
+RESOURCES += \
+    erp.qrc

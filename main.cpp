@@ -7,6 +7,7 @@
 #include <QSqlError>
 #include <QSqlQuery>
 #include <QVariant>
+#include <QTextCodec>
 #include <iostream>
 bool createConnect()
 {
@@ -32,7 +33,7 @@ int main(int argc, char *argv[])
     MainWindow w;
     LoginDialog loginDlg;
     QDesktopWidget *desk=QApplication::desktop();
-
+QTextCodec::setCodecForTr(QTextCodec::codecForName("utf8"));
     QSqlQuery query;
     query.exec("select * from material");
     while(query.next())

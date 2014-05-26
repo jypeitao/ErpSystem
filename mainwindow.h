@@ -16,9 +16,24 @@ public:
     ~MainWindow();
     
 private slots:
-    void on_pushButton_clicked();
 
-    void on_pushButton_2_clicked();
+    void on_khgl_clicked();
+
+    void on_kcgl_clicked();
+
+    void on_wxgl_clicked();
+
+    void on_tb_kccx_clicked();
+
+    void on_tb_xjrkd_clicked();
+
+    void on_tb_rkdcx_clicked();
+
+
+    void on_tb_new_customer_clicked();
+
+
+    void on_tb_xj_order_clicked();
 
 private:
     Ui::MainWindow *ui;
